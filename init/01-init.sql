@@ -1,14 +1,12 @@
 USE daelim;
 
-    CREATE TABLE IF NOT EXISTS MEMBER(
-        ID int auto_increment primary key,
-        EMAIL varchar(255),
-        PASSWORD varchar(100),
-        NAME varchar(100),
-        REGDATE datetime,
-        unique key (EMAIL)
-    ) engine=InnoDB character set = utf8;
+CREATE TABLE IF NOT EXISTS MENU (
+    ID           BIGINT AUTO_INCREMENT PRIMARY KEY,
+    MENU_NAME    VARCHAR(50)  NOT NULL,
+    CATEGORY     VARCHAR(20)  NOT NULL,
+    PRICE        INT          NOT NULL,
+    RELEASE_DATE DATE         NOT NULL
+) ENGINE=InnoDB CHARACTER SET=utf8mb4;
 
-    -- 테스트 데이터
-    INSERT INTO MEMBER (EMAIL, PASSWORD, NAME, REGDATE)
-    VALUES ('a@a.com', '1234', 'AAA', now());
+INSERT INTO MENU (MENU_NAME, CATEGORY, PRICE, RELEASE_DATE) VALUES
+('아메리카노', '커피', 4500, '2024-01-01');
