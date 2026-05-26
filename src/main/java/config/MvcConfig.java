@@ -21,6 +21,7 @@ public class MvcConfig implements WebMvcConfigurer {
 
     @Bean
     public LocalValidatorFactoryBean validator() {
+
         return new LocalValidatorFactoryBean();
     }
 
