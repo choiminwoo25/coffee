@@ -24,10 +24,12 @@ public class MenuService {
     }
 
     public List<Menu> getMenuList() {
+
         return menuDao.findAll();
     }
 
     public Menu getMenu(Long id) {
+
         return menuDao.findById(id);
     }
 }

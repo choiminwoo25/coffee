@@ -13,7 +13,7 @@ public class AppConfig {
     public DataSource dataSource() {
         DataSource ds = new DataSource();
         ds.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        ds.setUrl("jdbc:mysql://localhost:3306/daelim?characterEncoding=UTF-8&serverTimezone=Asia/Seoul");
+        ds.setUrl("jdbc:mysql://localhost:3306/daelim?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Seoul");
         ds.setUsername("spring");
         ds.setPassword("daelimspring");
         ds.setInitialSize(2);
