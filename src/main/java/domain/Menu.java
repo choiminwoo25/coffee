@@ -11,10 +11,12 @@ public class Menu {
     private LocalDate releaseDate;
 
     public Long getId() {
+
         return id;
     }
 
     public void setId(Long id) {
+
         this.id = id;
     }
 
@@ -23,6 +25,7 @@ public class Menu {
     }
 
     public void setMenuName(String menuName) {
+
         this.menuName = menuName;
     }
 
@@ -31,22 +34,27 @@ public class Menu {
     }
 
     public void setCategory(String category) {
+
         this.category = category;
     }
 
     public int getPrice() {
+
         return price;
     }
 
     public void setPrice(int price) {
+
         this.price = price;
     }
 
     public LocalDate getReleaseDate() {
+
         return releaseDate;
     }
 
     public void setReleaseDate(LocalDate releaseDate) {
+
         this.releaseDate = releaseDate;
     }
 }

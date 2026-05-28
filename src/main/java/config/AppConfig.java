@@ -23,11 +23,13 @@ public class AppConfig {
 
     @Bean
     public MenuDao menuDao() {
+
         return new MenuDao(dataSource());
     }
 
     @Bean
     public MenuService menuService() {
+
         return new MenuService(menuDao());
     }
 }

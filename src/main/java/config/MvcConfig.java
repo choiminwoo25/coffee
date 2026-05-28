@@ -27,11 +27,13 @@ public class MvcConfig implements WebMvcConfigurer {
 
     @Override
     public org.springframework.validation.Validator getValidator() {
+
         return validator();
     }
 
     @Override
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
+
         configurer.enable();
     }
 }

@@ -21,7 +21,7 @@
         <form:errors path="category"/>
     </div>
     <div>
-        <label>가격 (원)</label>
+        <label>가격</label>
         <form:input path="price" type="number"/>
         <form:errors path="price"/>
     </div>
