@@ -24,14 +24,14 @@ public class CafeMenuController {
     @GetMapping("/list")
     public String list(Model model) {
         List<CafeMenu> cafeMenus = cafeMenuService.getMenuList();
-        model.addAttribute("menus", cafeMenus);
+        model.addAttribute("cafeMenus", cafeMenus);
         return "menu/list";
     }
 
     @GetMapping("/{id}")
     public String detail(@PathVariable Long id, Model model) {
         CafeMenu cafeMenu = cafeMenuService.getMenu(id);
-        model.addAttribute("menu", cafeMenu);
+        model.addAttribute("cafeMenu", cafeMenu);
         return "menu/detail";
     }
 

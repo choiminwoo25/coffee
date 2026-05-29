@@ -27,7 +27,7 @@
     </div>
     <div>
         <label>출시일</label>
-        <form:input path="releaseDate" />
+        <form:input path="releaseDate" type="date"/>
         <form:errors path="releaseDate"/>
     </div>
     <button type="submit">등록</button>

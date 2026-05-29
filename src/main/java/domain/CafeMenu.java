@@ -7,7 +7,7 @@ public class CafeMenu {
     private Long id;
     private String menuName;
     private String category;
-    private int price;
+    private Integer price;
     private LocalDate releaseDate;
 
     public Long getId() {
@@ -38,12 +38,12 @@ public class CafeMenu {
         this.category = category;
     }
 
-    public int getPrice() {
+    public Integer getPrice() {
 
         return price;
     }
 
-    public void setPrice(int price) {
+    public void setPrice(Integer price) {
 
         this.price = price;
     }

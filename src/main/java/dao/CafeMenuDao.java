@@ -27,7 +27,7 @@ public class CafeMenuDao {
         cafeMenu.setId(rs.getLong("ID"));
         cafeMenu.setMenuName(rs.getString("MENU_NAME"));
         cafeMenu.setCategory(rs.getString("CATEGORY"));
-        cafeMenu.setPrice(rs.getInt("PRICE"));
+        cafeMenu.setPrice(rs.getObject("PRICE", Integer.class));
         cafeMenu.setReleaseDate(rs.getDate("RELEASE_DATE").toLocalDate());
         return cafeMenu;
     };

@@ -14,6 +14,8 @@ public class CafeMenuRegisterRequest {
     @Size(max = 30, message = "메뉴명은 30자 이내로 입력해 주세요.")
     private String menuName;
 
+    @NotBlank(message = "카테고리를 입력해 주세요.")
+    @Size(max = 20, message = "카테고리는 20자 이내로 입력해 주세요.")
     private String category;
 
     @NotNull(message = "가격을 입력해 주세요.")

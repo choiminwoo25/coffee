@@ -22,14 +22,14 @@ public class AppConfig {
     }
 
     @Bean
-    public CafeMenuDao menuDao() {
+    public CafeMenuDao cafeMenuDao() {
 
         return new CafeMenuDao(dataSource());
     }
 
     @Bean
-    public CafeMenuService menuService() {
+    public CafeMenuService cafeMenuService() {
 
-        return new CafeMenuService(menuDao());
+        return new CafeMenuService(cafeMenuDao());
     }
 }
