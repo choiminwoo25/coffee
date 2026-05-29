@@ -8,7 +8,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.time.LocalDate;
 
-public class MenuRegisterRequest {
+public class CafeMenuRegisterRequest {
 
     @NotBlank(message = "메뉴명을 입력해 주세요.")
     @Size(max = 30, message = "메뉴명은 30자 이내로 입력해 주세요.")
@@ -20,7 +20,7 @@ public class MenuRegisterRequest {
     @Min(value = 0, message = "가격은 0원 이상이어야 합니다.")
     private Integer price;
 
-    @NotNull(message = "출시일을 선택해 주세요.")
+    @NotNull(message = "출시일을 입력해 주세요.")
     @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate releaseDate;
 

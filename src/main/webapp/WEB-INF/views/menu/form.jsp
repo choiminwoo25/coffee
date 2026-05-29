@@ -9,7 +9,7 @@
 <body>
 <h2>카페 메뉴 등록</h2>
 
-<form:form method="post" modelAttribute="menuRegisterRequest">
+<form:form method="post" modelAttribute="cafeMenuRegisterRequest">
     <div>
         <label>메뉴명</label>
         <form:input path="menuName"/>
@@ -31,7 +31,7 @@
         <form:errors path="releaseDate"/>
     </div>
     <button type="submit">등록</button>
-    <a href="${pageContext.request.contextPath}/menu/list">목록으로</a>
+    <a href="${pageContext.request.contextPath}/cafemenu/list">목록으로</a>
 </form:form>
 </body>
 </html>

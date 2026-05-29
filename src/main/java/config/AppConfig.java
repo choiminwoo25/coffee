@@ -1,10 +1,10 @@
 package config;
 
-import dao.MenuDao;
+import dao.CafeMenuDao;
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import service.MenuService;
+import service.CafeMenuService;
 
 @Configuration
 public class AppConfig {
@@ -22,14 +22,14 @@ public class AppConfig {
     }
 
     @Bean
-    public MenuDao menuDao() {
+    public CafeMenuDao menuDao() {
 
-        return new MenuDao(dataSource());
+        return new CafeMenuDao(dataSource());
     }
 
     @Bean
-    public MenuService menuService() {
+    public CafeMenuService menuService() {
 
-        return new MenuService(menuDao());
+        return new CafeMenuService(menuDao());
     }
 }

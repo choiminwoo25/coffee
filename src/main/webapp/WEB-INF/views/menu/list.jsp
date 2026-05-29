@@ -8,7 +8,7 @@
 </head>
 <body>
 <h2>카페 메뉴 목록</h2>
-<a href="${pageContext.request.contextPath}/menu/new">메뉴 등록</a>
+<a href="${pageContext.request.contextPath}/cafemenu/new">메뉴 등록</a>
 
 <table border="1">
     <thead>
@@ -22,17 +22,17 @@
     </thead>
     <tbody>
     <c:choose>
-        <c:when test="${empty menus}">
+        <c:when test="${empty cafeMenus}">
             <tr><td colspan="5">등록된 메뉴가 없습니다.</td></tr>
         </c:when>
         <c:otherwise>
-            <c:forEach var="menu" items="${menus}">
+            <c:forEach var="cafeMenu" items="${cafeMenus}">
                 <tr>
-                    <td>${menu.id}</td>
-                    <td><a href="${pageContext.request.contextPath}/menu/${menu.id}">${menu.menuName}</a></td>
-                    <td>${menu.category}</td>
-                    <td>${menu.price}원</td>
-                    <td>${menu.releaseDate}</td>
+                    <td>${cafeMenu.id}</td>
+                    <td><a href="${pageContext.request.contextPath}/cafemenu/${cafeMenu.id}">${cafeMenu.menuName}</a></td>
+                    <td>${cafeMenu.category}</td>
+                    <td>${cafeMenu.price}원</td>
+                    <td>${cafeMenu.releaseDate}</td>
                 </tr>
             </c:forEach>
         </c:otherwise>

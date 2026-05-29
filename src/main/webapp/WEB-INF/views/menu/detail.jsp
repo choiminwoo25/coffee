@@ -11,26 +11,26 @@
 <table border="1">
     <tr>
         <th>번호</th>
-        <td>${menu.id}</td>
+        <td>${cafeMenu.id}</td>
     </tr>
     <tr>
         <th>메뉴명</th>
-        <td>${menu.menuName}</td>
+        <td>${cafeMenu.menuName}</td>
     </tr>
     <tr>
         <th>카테고리</th>
-        <td>${menu.category}</td>
+        <td>${cafeMenu.category}</td>
     </tr>
     <tr>
         <th>가격</th>
-        <td>${menu.price}원</td>
+        <td>${cafeMenu.price}원</td>
     </tr>
     <tr>
         <th>출시일</th>
-        <td>${menu.releaseDate}</td>
+        <td>${cafeMenu.releaseDate}</td>
     </tr>
 </table>
 
-<a href="${pageContext.request.contextPath}/menu/list">목록으로</a>
+<a href="${pageContext.request.contextPath}/cafemenu/list">목록으로</a>
 </body>
 </html>

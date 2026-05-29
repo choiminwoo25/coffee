@@ -2,7 +2,7 @@ package domain;
 
 import java.time.LocalDate;
 
-public class Menu {
+public class CafeMenu {
 
     private Long id;
     private String menuName;
